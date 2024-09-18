@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class Jogador : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    private const float velocidade = 5.0f;
+    [SerializeField] private bool jogador1;
+    [SerializeField] private Color corDoJogador;
+    private Vector2 direcao;
+  
 }
