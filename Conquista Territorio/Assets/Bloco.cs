@@ -6,10 +6,7 @@ using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class Bloco : MonoBehaviour
-
-
 {
-  
     private bool conquistado = false;
     private SpriteRenderer spriteRenderer;
     private int jogadorDono;
@@ -28,13 +25,13 @@ public class Bloco : MonoBehaviour
         if (jogador1)
         {
             jogadorDono = 1;
-            GameManager.Instance.NotificarConquista(1);
+            GameManager.Instance.ConquistarTerritorio();
 
         }
         else
         {
             jogadorDono = 2;
-            GameManager.Instance.NotificarConquista(2);
+            GameManager.Instance.ConquistarTerritorio();
         }
     }
     public bool PegarConquistado()
