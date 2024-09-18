@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor.Build.Content;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class Bloco : MonoBehaviour
@@ -30,8 +31,10 @@ public class Bloco : MonoBehaviour
             GameManager.Instance.NotificarConquista(1);
 
         }
+        else
+        {
+            jogadorDono = 2;
+            GameManager.Instance.NotificarConquista(2);
+        }
     }
-    
-
-
 }
