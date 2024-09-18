@@ -31,5 +31,25 @@ public class Jogador : MonoBehaviour
                 direcao.y = -1;
             }
         }
-
+        else
+        {
+            if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                direcao.x = -1;
+            }
+            else if (Input.GetKey(KeyCode.RightArrow))
+            {
+                direcao.x = 1;
+            }
+            if (Input.GetKey(KeyCode.UpArrow))
+            {
+                direcao.y = 1;
+            }
+            else if (Input.GetKey(KeyCode.DownArrow))
+            {
+                direcao.y = -1;
+            }
+        }
+        transform.Translate(direcao * velocidade * Time.deltaTime);
     }
+}
