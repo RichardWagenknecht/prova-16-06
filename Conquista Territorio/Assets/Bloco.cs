@@ -45,6 +45,9 @@ public class Bloco : MonoBehaviour
     {
         return jogadorDono;
     }
-
+    private void AtualizarCor(Color novaCor)
+    {
+        spriteRenderer.color = novaCor; // Muda a cor do SpriteRenderer para a cor especificada.
+    }
 
 }
