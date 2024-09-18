@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class Bloco : MonoBehaviour
 {
-    private bool conquistado = false;
+    public bool conquistado = false;
     private SpriteRenderer spriteRenderer;
     private int jogadorDono;
 
