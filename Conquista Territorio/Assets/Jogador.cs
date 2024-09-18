@@ -50,5 +50,6 @@ public class Jogador : MonoBehaviour
                 direcao.y = -1;
             }
         }
+        transform.Translate(direcao * velocidade * Time.deltaTime);
     }
 }
