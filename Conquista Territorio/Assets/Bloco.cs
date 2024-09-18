@@ -37,4 +37,14 @@ public class Bloco : MonoBehaviour
             GameManager.Instance.NotificarConquista(2);
         }
     }
+    public bool PegarConquistado()
+    {
+        return conquistado;
+    }
+    public int PegarJogadorDono()
+    {
+        return jogadorDono;
+    }
+
+
 }
