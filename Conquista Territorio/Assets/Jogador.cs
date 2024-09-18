@@ -52,4 +52,17 @@ public class Jogador : MonoBehaviour
         }
         transform.Translate(direcao * velocidade * Time.deltaTime);
     }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Block"))
+        {
+            other.GetComponent<Bloco>();
+
+            if (!Bloco.instance.Conquistado)
+            {
+                Bloco.AlterarConquista(jogador1, corDoJogador);
+            }
+        }
+
+    }
 }
